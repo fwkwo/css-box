@@ -1,0 +1,99 @@
+/*弹性盒子水平分列*/
+ .img{
+	width:150px;
+}
+.col{
+	-webkit-column-count:3;
+	-webkit-column-rule-style:dotted;
+	column-rule-style:dotted;
+	height: 150px;
+}
+/*盒子居中布局*/
+.box_c{
+	width: 200px;
+	height: 200px;
+	background: red;
+	display: -webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+}
+
+/*弹性盒子水平分栏、排序*/
+.content{
+	display: -webkit-flex;
+	width: 500px;
+	background:#3ad2db;
+	-webkit-flex-direction:column;
+	height: 300px;
+}
+.first{
+	height: 100px;
+	background:#f9c100;
+	-webkit-flex:1;
+	-webkit-order:2;
+}
+.second{
+	height: 150px;
+	background: #e84e4e;
+	-webkit-flex:1;
+	-webkit-order:3;
+}
+.three{
+	height: 100px;
+	background: #2cb857;
+	-webkit-flex:1;
+	-webkit-order:1;
+}
+/*弹性盒子垂直分栏*/
+.content_01{
+	display: -webkit-flex;
+	width: 500px;
+	background:#3ad2db;
+}
+.first_01{
+	height: 100px;
+	background:#f9c100;
+	-webkit-flex:1;
+}
+.second_01{
+	height: 150px;
+	background: #e84e4e;
+	-webkit-flex:1;
+}
+.three_01{
+	height: 100px;
+	background: #2cb857;
+	-webkit-flex:1;
+}
+/*css盒子模型（正常盒子）*/
+.box{
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+	background: #2cb857;
+	margin:50px 0px 50px 100px;
+	border: 5px solid #e84e4e;
+	box-shadow: 0px 0px 2px 2px #f9c100;
+}
+.box-con{
+	width: 100px;
+	height: 100px;
+	background: #f9c100;
+}
+
+/*css盒子模型（怪异盒模型）*/
+.box_01{
+	padding: 10px;
+	width: 130px;
+	height: 130px;
+	background: #2cb857;
+	margin:50px 50px 50px 100px;
+	border: 5px solid #e84e4e;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 2px 2px #f9c100;
+}
+.box-con_01{
+	width: 100px;
+	height: 100px;
+	background: #f9c100;
+}
